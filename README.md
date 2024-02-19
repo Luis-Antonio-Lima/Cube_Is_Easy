@@ -1,5 +1,6 @@
 ![GitHub License](https://img.shields.io/github/license/Luis-Antonio-Lima/Cube_Is_Easy)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fluis-antonio-lima.github.io%2FCube_Is_Easy%2F)
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fluis-antonio-lima.github.io%2FCube_Is_Easy%2F)
 
 
 # Cube_Is_Easy
