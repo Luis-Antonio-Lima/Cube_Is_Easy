@@ -1,3 +1,7 @@
+![GitHub License](https://img.shields.io/github/license/Luis-Antonio-Lima/Cube_Is_Easy)
+
+
+
 # Cube_Is_Easy
 Este repositório hospeda o projeto do site Cube_is_Easy
 ## Autor
