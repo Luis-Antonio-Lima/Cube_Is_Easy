@@ -13,6 +13,10 @@ Folha de estilo do site roboticapratica.com
 :root {
     --pretoLayout: #000000;
     --brancoLayout: #ffffff;
+    --backgroundCard: #e0e0e0;
+    --bordaLayout: #b6b6b6;
+    --vermelhoLayout: #aa0000;
+    --cinzaLayout: #414141;
 }
 
 /* CSS RESET */
@@ -27,6 +31,48 @@ html {
     scroll-behavior: smooth;
 }
 
+.FlexMenu {
+    display: Flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: right;
+    
+}
+
+.Card {
+    margin-top: 30px;
+    width: 338px;
+    height: 450px;
+    background-color: var (--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
+    padding: 10px 30px 50px 30px;
+    text-align: left;
+    color: var(--cinzaLayout)
+}
+
+.Buttom {
+    background-color: var(--vermelhoLayout);
+    color: var(--brancoLayout);
+    padding: 5px 25px 5px 25px;
+    border-radius: 25px;
+    border: 2px solid var(--pretoLayout);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
 /* Fonte */
 body {
     font-family: "Open Sans", sans-serif;
@@ -37,7 +83,7 @@ body {
 
 .Container {
     margin: 0 auto;
-    padding: 50px 15px 50px 15px;
+    padding: 25px 15px 50px 15px;
 }
 
 .Flex {
@@ -46,9 +92,11 @@ body {
     justify-content: center;
 }
 
+
 /* Smartphone portrait         */
 
 /* Cabeçalho */
+
 #logo img {
     width: 96px;
     height: 96px;
@@ -57,6 +105,8 @@ body {
 header {
     background-color: var(--pretoLayout);
     color: var(--brancoLayout);
+    height: 150px;
+    
 }
 
 /* Footer */
@@ -71,7 +121,7 @@ footer {
 }
 
 li {
-    display: inline-block;
+    display: block;
     padding-right: 10px;
     color: var(--brancoLayout);
 }
@@ -80,19 +130,53 @@ a {
     text-decoration: none;
 }
 
+label {
+    font-size: 2em;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: var(--cinzaLayout);
+    height: 100vh;
+    position: fixed;
+    top:142px;
+    right: -100%;
+    width: 60%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--bordaLayout);
+}
+
 /* Smartphone landscape        */
 @media (min-width: 576px) {
     .Container {
         max-width: 540px;
+        padding: 15px 15px 50px 15px;
     }
-    .Flex {
+    .FlexMenu {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
     #social {
         margin-bottom: 0px;
-}
+    }
+
+    header {
+    height: 120px;
+    }
+    
+    li {
+        display: inline-block
+    }
 }
 
 /* Tablet portrait             */
@@ -113,6 +197,34 @@ a {
 @media (min-width: 1200px) {
     .Container {
         max-width: 1140px;
+    }
+    #logo img {
+        width: 128px;
+        height: 128px;
+    }
+    header {
+        height: 160px;
+    }
+    label {
+        display: none;
+    }
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 20px;
+        
+    }
+    nav ul li {
+        float: left;
+        border: 0;
+        text-align: left;
+    }
+    nav ul li a {
+        color: var(--brancoLayout);
+    }
+    nav ul li a:hover {
+        color: var(--vermelhoLayout);
     }
 }
 
