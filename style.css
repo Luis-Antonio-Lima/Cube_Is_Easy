@@ -120,16 +120,6 @@ footer {
         margin-bottom: 25px;
 }
 
-li {
-    display: block;
-    padding-right: 10px;
-    color: var(--brancoLayout);
-}
-
-a {
-    text-decoration: none;
-}
-
 label {
     font-size: 2em;
     padding-right: 15px;
@@ -140,10 +130,14 @@ nav ul {
     background-color: var(--cinzaLayout);
     height: 100vh;
     position: fixed;
-    top:142px;
+    top:150px;
     right: -100%;
     width: 60%;
     transition: all 0.5s;
+}
+
+section div a:hover {
+    color: var(--pretoLayout);
 }
 
 #check:checked ~ ul {
@@ -153,36 +147,55 @@ nav ul {
 nav ul li {
     padding: 20px;
     border-bottom: 1px solid var(--bordaLayout);
+    display: block;
+    padding-right: 10px;
+    color: var(--brancoLayout);
+}
+
+nav ul li a {
+    color: var(--brancoLayout);
+}
+nav ul li a:hover {
+    color: var(--vermelhoLayout);
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Smartphone landscape        */
 @media (min-width: 576px) {
     .Container {
         max-width: 540px;
-        padding: 15px 15px 50px 15px;
+        
     }
-    .FlexMenu {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
+    nav ul {
+        top:140px;
     }
+    
     #social {
         margin-bottom: 0px;
     }
 
     header {
-    height: 120px;
+    height: 140px;
     }
     
-    li {
-        display: inline-block
-    }
+    
 }
 
 /* Tablet portrait             */
 @media (min-width: 768px) {
     .Container {
         max-width: 720px;
+    }
+
+    nav ul {
+        top:140px;
+    }
+    
+    header {
+        height: 140px;
     }
 }
 
@@ -191,13 +204,27 @@ nav ul li {
     .Container {
         max-width: 960px;
     }
+    nav ul {
+        top:140px;
+    }
+    header {
+        height: 140px;
+    }
 }
 
 /* PCs ou notebooks HD         */
 @media (min-width: 1200px) {
     .Container {
         max-width: 1140px;
+        padding: 15px 15px 50px 15px;
     }
+    .FlexMenu {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        
+    }
+
     #logo img {
         width: 128px;
         height: 128px;
@@ -212,20 +239,18 @@ nav ul li {
         position: static;
         height: auto;
         background-color: transparent;
-        margin-top: 20px;
-        
+        margin-top: 10px;
+        margin-left: 300px;
+        transition: all 0s;
+        display: inline-block;
     }
     nav ul li {
         float: left;
         border: 0;
         text-align: left;
+        
     }
-    nav ul li a {
-        color: var(--brancoLayout);
-    }
-    nav ul li a:hover {
-        color: var(--vermelhoLayout);
-    }
+    
 }
 
 /* PCs notebooks TVs Full HD + */
