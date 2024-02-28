@@ -43,7 +43,7 @@ html {
     margin-top: 30px;
     width: 338px;
     height: 450px;
-    background-color: var (--backgroundCard);
+    background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
     text-align: center;
@@ -121,17 +121,21 @@ footer {
 }
 
 label {
+    position: fixed;
     font-size: 2em;
     padding-right: 15px;
+    right: 10px;
+    top: 89px;
+    color: rgba(125, 125, 125, 0.9);
 }
 
 nav ul {
     list-style: none;
-    background-color: var(--cinzaLayout);
+    background-color: rgba(65, 65, 65, 0.9);
     height: 100vh;
     position: fixed;
     top:150px;
-    right: -100%;
+    right: -60%;
     width: 60%;
     transition: all 0.5s;
 }
@@ -163,6 +167,12 @@ a {
     text-decoration: none;
 }
 
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 /* Smartphone landscape        */
 @media (min-width: 576px) {
     .Container {
@@ -171,6 +181,8 @@ a {
     }
     nav ul {
         top:140px;
+        right: -50%;
+        width: 50%;
     }
     
     #social {
@@ -180,8 +192,6 @@ a {
     header {
     height: 140px;
     }
-    
-    
 }
 
 /* Tablet portrait             */
@@ -192,6 +202,8 @@ a {
 
     nav ul {
         top:140px;
+        right: -50%;
+        width: 50%;
     }
     
     header {
@@ -249,6 +261,11 @@ a {
         border: 0;
         text-align: left;
         
+    }
+
+    #topo img {
+        width: 54px;
+        height: 54px;
     }
     
 }
