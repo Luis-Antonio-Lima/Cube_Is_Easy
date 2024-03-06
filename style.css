@@ -26,6 +26,29 @@ Folha de estilo do site roboticapratica.com
     border: 0;
 }
 
+/* Banner */
+main {
+    background: url(img/banner.png);
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-shadow: #000000 0.12em 0.12em 0.12em;
+}
+
+main h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+}
+
+main h2 {
+    font-size: 0.8em;
+}
+
+main h1,h2 {
+    color: var(--brancoLayout);
+}
+
 /* Layout */
 html {
     scroll-behavior: smooth;
@@ -36,7 +59,7 @@ html {
     flex-direction: row-reverse;
     justify-content: space-between;
     text-align: right;
-    
+    align-items: center;
 }
 
 
@@ -89,9 +112,7 @@ html {
     color: var(--cinzaLayout)
 }
 
-.Card a {
-    border: 0;
-}
+
 
 .Buttom {
     background-color: var(--vermelhoLayout);
@@ -153,6 +174,7 @@ footer {
 
 #social {
         margin-bottom: 25px;
+        display: flex;
 }
 
 label {
@@ -208,12 +230,39 @@ a {
     bottom: 10px;
 }
 
+#YouTube img:hover {
+    filter: invert(91%) sepia(73%) saturate(6195%) hue-rotate(347deg) brightness(97%) contrast(110%);
+}
+
 /* Smartphone landscape        */
 @media (min-width: 576px) {
     .Container {
         max-width: 540px;
-        
+
     }
+
+    .Flex {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+    }
+
+    main {
+        height: 40vh; 
+    }
+
+    main h2 {
+        font-size: 0.8em;
+    }
+
+    footer {
+        background-color: var(--pretoLayout);
+        color: var(--brancoLayout);
+        text-align: center;
+        padding-top: 36px;
+    }
+
     nav ul {
         top:140px;
         right: -50%;
@@ -244,6 +293,14 @@ a {
     header {
         height: 140px;
     }
+
+    main {
+        height: 20vh; 
+    }
+
+    main h2 {
+        font-size: 1em;
+    }
 }
 
 /* Tablet landscape            */
@@ -257,6 +314,10 @@ a {
     header {
         height: 140px;
     }
+
+    main h2 {
+        font-size: 1.1em;
+    }
 }
 
 /* PCs ou notebooks HD         */
@@ -265,7 +326,7 @@ a {
         max-width: 1140px;
         padding: 15px 15px 50px 15px;
     }
-    .FlexMenu {
+    .Flex {
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
@@ -296,6 +357,18 @@ a {
         border: 0;
         text-align: left;
         
+    }
+
+    main {
+        height: 30vh; 
+    }
+
+    main h1 {
+        font-size: 2em;
+    }
+
+    main h2 {
+        font-size: 1.1em;
     }
 
     #topo img {
