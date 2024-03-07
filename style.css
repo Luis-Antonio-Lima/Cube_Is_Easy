@@ -149,6 +149,12 @@ body {
     justify-content: space-evenly;
 }
 
+.Flex3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Smartphone portrait         */
 
 /* Cabeçalho */
