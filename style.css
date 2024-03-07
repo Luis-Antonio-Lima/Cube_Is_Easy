@@ -231,7 +231,15 @@ a {
 }
 
 #YouTube img:hover {
-    filter: invert(91%) sepia(73%) saturate(6195%) hue-rotate(347deg) brightness(97%) contrast(110%);
+    filter: invert(94%) sepia(73%) saturate(6100%) hue-rotate(347deg) brightness(97%) contrast(100%);
+}
+
+#GitHub img:hover {
+    filter: invert(94%) sepia(73%) saturate(6100%) hue-rotate(347deg) brightness(97%) contrast(100%);
+}
+
+#Linkedin img:hover {
+    filter: invert(94%) sepia(73%) saturate(6100%) hue-rotate(347deg) brightness(97%) contrast(100%);
 }
 
 /* Smartphone landscape        */
