@@ -29,7 +29,7 @@ Folha de estilo do site roboticapratica.com
 /* Banner */
 main {
     background: url(img/banner.png);
-    height: 25vh;
+    height: 40vh;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -42,7 +42,7 @@ main h1 {
 }
 
 main h2 {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 main h1,h2 {
@@ -137,6 +137,11 @@ body {
     padding: 25px 15px 50px 15px;
 }
 
+.Container2 {
+    margin: 0 auto;
+    padding: 0px 15px 50px 30px;
+}
+
 .Flex {
     display: flex;
     flex-direction: column;
@@ -162,12 +167,13 @@ body {
 #logo img {
     width: 96px;
     height: 96px;
+    
 }
 
 header {
     background-color: var(--pretoLayout);
     color: var(--brancoLayout);
-    height: 150px;
+    height: 97px;
     
 }
 
@@ -180,15 +186,14 @@ footer {
 
 #social {
         margin-bottom: 25px;
-        display: flex;
 }
 
 label {
     position: fixed;
     font-size: 2em;
-    padding-right: 15px;
+    padding-right: 25px;
     right: 10px;
-    top: 89px;
+    top: 48px;
     color: rgba(125, 125, 125, 0.9);
 }
 
@@ -197,7 +202,7 @@ nav ul {
     background-color: rgba(65, 65, 65, 0.9);
     height: 100vh;
     position: fixed;
-    top:150px;
+    top:97px;
     right: -60%;
     width: 60%;
     transition: all 0.5s;
@@ -236,18 +241,6 @@ a {
     bottom: 10px;
 }
 
-#YouTube img:hover {
-    filter: invert(94%) sepia(73%) saturate(6100%) hue-rotate(347deg) brightness(97%) contrast(100%);
-}
-
-#GitHub img:hover {
-    filter: invert(94%) sepia(73%) saturate(6100%) hue-rotate(347deg) brightness(97%) contrast(100%);
-}
-
-#Linkedin img:hover {
-    filter: invert(94%) sepia(73%) saturate(6100%) hue-rotate(347deg) brightness(97%) contrast(100%);
-}
-
 /* Smartphone landscape        */
 @media (min-width: 576px) {
     .Container {
@@ -263,11 +256,15 @@ a {
     }
 
     main {
-        height: 40vh; 
+        height: 45vh; 
+    }
+
+    main h1 {
+        font-size: 1.7em;
     }
 
     main h2 {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     footer {
@@ -278,7 +275,7 @@ a {
     }
 
     nav ul {
-        top:140px;
+        top: 96px;
         right: -50%;
         width: 50%;
     }
@@ -288,7 +285,7 @@ a {
     }
 
     header {
-    height: 140px;
+    height: 96px;
     }
 }
 
@@ -296,6 +293,12 @@ a {
 @media (min-width: 768px) {
     .Container {
         max-width: 720px;
+    }
+
+    #logo img {
+        width: 140px;
+        height: 140px;
+        
     }
 
     nav ul {
@@ -309,11 +312,15 @@ a {
     }
 
     main {
-        height: 20vh; 
+        height: 35vh; 
+    }
+
+    main h1 {
+        font-size: 2.5em;
     }
 
     main h2 {
-        font-size: 1em;
+        font-size: 1.6em;
     }
 }
 
@@ -322,21 +329,31 @@ a {
     .Container {
         max-width: 960px;
     }
+    #logo img {
+        width: 128px;
+        height: 128px;
+        
+    }
     nav ul {
-        top:140px;
+        top: 128px;
     }
     header {
-        height: 140px;
+        height: 128px;
     }
 
     main h2 {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 }
 
 /* PCs ou notebooks HD         */
 @media (min-width: 1200px) {
     .Container {
+        max-width: 1140px;
+        padding: 15px 15px 50px 15px;
+    }
+    
+    .Container2 {
         max-width: 1140px;
         padding: 15px 15px 50px 15px;
     }
