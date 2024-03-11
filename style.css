@@ -17,6 +17,11 @@ Folha de estilo do site roboticapratica.com
     --bordaLayout: #b6b6b6;
     --vermelhoLayout: #aa0000;
     --cinzaLayout: #414141;
+    --vermelhoTexto: #ff0000;
+    --azulTexto: #006eff;
+    --verdeTexto: #2bff00;
+    --amareloTexto: #ffdd00;
+    --laranjaTexto: #ff5900;
 }
 
 /* CSS RESET */
@@ -239,6 +244,22 @@ a {
     position: fixed;
     right: 10px;
     bottom: 10px;
+}
+
+#destaque {
+    color: var(--amareloTexto);
+}
+#destaque2 {
+    color: var(--vermelhoTexto);
+}
+#destaque3 {
+    color: var(--laranjaTexto);
+}
+#destaque4 {
+    color: var(--azulTexto);
+}
+#destaque5 {
+    color: var(--verdeTexto);
 }
 
 /* Smartphone landscape        */
