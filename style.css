@@ -92,6 +92,10 @@ html {
     color: var(--cinzaLayout)
 }
 
+.Card video {
+    border-radius: 25px 25px 0px 0px;;
+}
+
 .Card2 {
     margin-top: 30px;
     width: 338px;
@@ -147,6 +151,11 @@ body {
     padding: 0px 15px 50px 30px;
 }
 
+.Container3{
+    margin: 0 auto;
+    padding: 40px 15px 40px 15px;
+}
+
 .Flex {
     display: flex;
     flex-direction: column;
@@ -159,10 +168,22 @@ body {
     justify-content: space-evenly;
 }
 
-.Flex3 div {
+.Flex3 {
     display: flex;
-    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
     justify-content: center;
+}
+/*
+#principalCards {
+    background: url(img/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+*/
+
+.YouTube {
+    background-color: var(--cinzaLayout);
 }
 
 /* Smartphone portrait         */
@@ -262,6 +283,11 @@ a {
     color: var(--verdeTexto);
 }
 
+#youtube {
+    font-size: 1.7em;
+    color: var(--vermelhoTexto)
+}
+
 /* Smartphone landscape        */
 @media (min-width: 576px) {
     .Container {
@@ -333,7 +359,7 @@ a {
     }
 
     main {
-        height: 35vh; 
+        height: 35vh;
     }
 
     main h1 {
@@ -343,6 +369,11 @@ a {
     main h2 {
         font-size: 1.6em;
     }
+    /*
+    #principalCards {
+        background-attachment: fixed;
+    }
+    */
 }
 
 /* Tablet landscape            */
@@ -413,6 +444,7 @@ a {
 
     main {
         height: 30vh; 
+        background-attachment: fixed;
     }
 
     main h1 {
