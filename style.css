@@ -54,6 +54,11 @@ main h1,h2 {
     color: var(--brancoLayout);
 }
 
+#banner {
+    width: 338px;
+    height: 216px;
+}
+
 /* Layout */
 html {
     scroll-behavior: smooth;
@@ -184,6 +189,49 @@ body {
 
 .YouTube {
     background-color: var(--cinzaLayout);
+}
+
+.Introducao {
+    text-align: center;
+}
+
+.slider {
+    width: 338px;
+    height: 216px;
+    background: url(img/cubo1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    animation: slide 30s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background: url(img/cubo1.png);
+        background-size: cover;
+        background-position: center;
+    }
+    25%{
+        background: url(img/cubo2.png);
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background: url(img/cubo3.png);
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        background: url(img/cubo4.png);
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background: url(img/cubo1.png);
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 /* Smartphone portrait         */
