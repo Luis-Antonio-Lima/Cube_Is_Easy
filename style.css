@@ -59,6 +59,28 @@ main h1,h2 {
     height: 216px;
 }
 
+/* Banner de páginas */
+.BannerPaginas {
+    background: url(img/banner.png);
+    height: 15vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-shadow: #000000 0.12em 0.12em 0.12em;
+}
+
+.FlexBannerPaginas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BannerPaginas h1{
+    color:var(--brancoLayout);
+    font-size: 2.5em;
+}
+
 /* Layout */
 html {
     scroll-behavior: smooth;
@@ -98,18 +120,17 @@ html {
 }
 
 .Card video {
-    border-radius: 25px 25px 0px 0px;;
+    border-radius: 25px 25px 0px 0px;
 }
 
 .Card2 {
-    margin-top: 30px;
+    margin: 30px 5px 0px 5px;
     width: 338px;
     height: 450px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
     text-align: center;
-    
 }
 
 .Card2 img {
@@ -126,7 +147,7 @@ html {
     color: var(--cinzaLayout)
 }
 
-
+/* Botão */
 
 .Buttom {
     background-color: var(--vermelhoLayout);
@@ -137,6 +158,8 @@ html {
     font-size: 1.2em;
     font-weight: 700;
 }
+
+
 
 /* Fonte */
 body {
@@ -158,7 +181,12 @@ body {
 
 .Container3{
     margin: 0 auto;
-    padding: 40px 15px 40px 15px;
+    padding: 30px 15px 40px 15px;
+}
+
+.Container4 {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
 }
 
 .Flex {
@@ -179,6 +207,14 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.Flex4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 /*
 #principalCards {
     background: url(img/banner.png);
@@ -189,6 +225,7 @@ body {
 
 .YouTube {
     background-color: var(--cinzaLayout);
+    font-size: 0.8em;
 }
 
 .Introducao {
@@ -202,8 +239,17 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 25px 25px 0px 0px;
     animation: slide 30s infinite;
+}
+
+#imgSobre img{
+    border: 3px solid var(--pretoLayout);
+    border-radius: 50%;
+}
+
+#textoSobre h2, p {
+    color:#000000;
 }
 
 @keyframes slide{
@@ -251,8 +297,15 @@ header {
     
 }
 
+
 /* Footer */
 footer {
+    background-color: var(--pretoLayout);
+    color: var(--brancoLayout);
+    text-align: center;
+}
+
+footer p {
     background-color: var(--pretoLayout);
     color: var(--brancoLayout);
     text-align: center;
@@ -269,6 +322,7 @@ label {
     right: 10px;
     top: 48px;
     color: rgba(125, 125, 125, 0.9);
+    z-index: 3;
 }
 
 nav ul {
@@ -280,6 +334,7 @@ nav ul {
     right: -60%;
     width: 60%;
     transition: all 0.5s;
+    z-index: 3;
 }
 
 section div a:hover {
@@ -350,6 +405,21 @@ a {
 
     }
 
+    .Flex4 {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .BannerPaginas {
+        height: 25vh;
+    }
+
+    .YouTube {
+        font-size: 1em;
+    }
+
     main {
         height: 45vh; 
     }
@@ -388,6 +458,20 @@ a {
 @media (min-width: 768px) {
     .Container {
         max-width: 720px;
+    }
+
+    .Flex4 {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .BannerPaginas {
+        height: 12vh;
+    }
+
+    .YouTube {
+        font-size: 1.15em;
     }
 
     #logo img {
@@ -429,6 +513,17 @@ a {
     .Container {
         max-width: 960px;
     }
+
+    .Flex4 {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .BannerPaginas {
+        height: 15vh;
+    }
+
     #logo img {
         width: 128px;
         height: 128px;
@@ -461,7 +556,16 @@ a {
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
-        
+    }
+
+    .Flex4 {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .YouTube {
+        font-size: 1em;
     }
 
     #logo img {
