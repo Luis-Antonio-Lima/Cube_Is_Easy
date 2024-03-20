@@ -6,7 +6,7 @@
 # Cube_Is_Easy
 Este repositório hospeda o projeto do site Cube_is_Easy
 ##Acessar site
-!![QrCode](https://github.com/Luis-Antonio-Lima/Cube_Is_Easy/blob/main/doc/qrcode_luis-antonio-lima.github.io.png)
+![QrCode](https://github.com/Luis-Antonio-Lima/Cube_Is_Easy/blob/main/doc/qrcode_luis-antonio-lima.github.io.png)
 ## Autor
 Luis Antônio de Paula Lima
 ## Links utilizados
