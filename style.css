@@ -189,6 +189,11 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
+.Container5 {
+    margin: 0 auto;
+    padding: 140px 15px 50px 15px;
+}
+
 .Flex {
     display: flex;
     flex-direction: column;
@@ -243,6 +248,10 @@ body {
     animation: slide 30s infinite;
 }
 
+.bannerCubo div {
+    display: none;
+}
+
 #imgSobre img{
     border: 3px solid var(--pretoLayout);
     border-radius: 50%;
@@ -251,6 +260,7 @@ body {
 #textoSobre h2, p {
     color:#000000;
 }
+
 
 @keyframes slide{
     0%{
@@ -552,6 +562,11 @@ a {
         max-width: 1140px;
         padding: 15px 15px 50px 15px;
     }
+
+    .Container5 {
+        margin: 0 auto;
+        padding: 140px 15px 50px 15px;
+    }
     .Flex {
         justify-content: space-between;
         align-items: center;
@@ -559,13 +574,26 @@ a {
     }
 
     .Flex4 {
-        justify-content: space-evenly;
+        justify-content:space-around;
         align-items: center;
-        flex-direction: row;
     }
 
     .YouTube {
         font-size: 1em;
+    }
+
+    .bannerCubo {
+        background: url(img/banner.png);
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        text-shadow: #000000 0.12em 0.12em 0.12em;
+        background-attachment: fixed;
+    }
+
+    .bannerCubo div{
+        display: flex;
     }
 
     #logo img {
@@ -610,6 +638,17 @@ a {
     #topo img {
         width: 54px;
         height: 54px;
+    }
+
+    #imgCubo img{
+        border: 3px solid var(--pretoLayout);
+        border-radius: 50%;
+    }
+    
+    #textoCubo h2, p{
+        display: flex;
+        color: #ffffff;
+        flex-direction: column;
     }
     
 }
