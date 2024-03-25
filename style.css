@@ -220,6 +220,13 @@ body {
     align-items: center;
     text-align: center;
 }
+
+.FlexPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /*
 #principalCards {
     background: url(img/banner.png);
@@ -248,7 +255,15 @@ body {
     animation: slide 30s infinite;
 }
 
-.bannerCubo div {
+.bannerCubo {
+    display: none;
+}
+
+.bannerCubo img, h1{
+    display: none;
+}
+
+.bannerCubo p {
     display: none;
 }
 
@@ -555,12 +570,17 @@ a {
 @media (min-width: 1200px) {
     .Container {
         max-width: 1140px;
-        padding: 15px 15px 50px 15px;
+        padding: 15px 15px 40px 15px;
     }
     
     .Container2 {
         max-width: 1140px;
         padding: 15px 15px 50px 15px;
+    }
+
+    .Container4 {
+        margin: 0 auto;
+        padding: 50px 400px 50px 400px;
     }
 
     .Container5 {
@@ -573,8 +593,20 @@ a {
         flex-direction: row-reverse;
     }
 
+    .FlexPrincipal h1, h2 {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
     .Flex4 {
+        flex-direction: row;
         justify-content:space-around;
+        align-items: left;
+    }
+
+    .FlexSection {
+        display: flex;
         align-items: center;
     }
 
@@ -582,17 +614,20 @@ a {
         font-size: 1em;
     }
 
+    /* Citações */
     .bannerCubo {
+        display: block;
         background: url(img/banner.png);
-        height: 70vh;
         background-size: cover;
         background-position: center;
-        text-align: center;
-        text-shadow: #000000 0.12em 0.12em 0.12em;
         background-attachment: fixed;
     }
 
-    .bannerCubo div{
+    .bannerCubo img, h1{
+        display: flex;
+    }
+    
+    .bannerCubo p {
         display: flex;
     }
 
@@ -645,10 +680,24 @@ a {
         border-radius: 50%;
     }
     
-    #textoCubo h2, p{
-        display: flex;
-        color: #ffffff;
-        flex-direction: column;
+    #textoCubo p{
+        color: var(--brancoLayout);
+    }
+    
+    #textoCubo h1 {
+        font-family: "sans-serif", sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: var(--brancoLayout);
+    }
+
+    .TopicosIntro {
+        margin-top: 10px;
+    }
+    
+    .TopicosIntro img {
+        margin-right: 20px;
     }
     
 }
