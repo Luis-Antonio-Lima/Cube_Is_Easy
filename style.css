@@ -59,6 +59,11 @@ main h1,h2 {
     height: 216px;
 }
 
+#banner2 {
+    width: 338px;
+    height: 216px;
+}
+
 /* Banner de páginas */
 .BannerPaginas {
     background: url(img/banner.png);
@@ -181,7 +186,7 @@ body {
 
 .Container3{
     margin: 0 auto;
-    padding: 30px 15px 40px 15px;
+    padding: 50px 15px 30px 15px;
 }
 
 .Container4 {
@@ -227,6 +232,12 @@ body {
     justify-content: center;
 }
 
+.FlexYoutube {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 /*
 #principalCards {
     background: url(img/banner.png);
@@ -237,7 +248,8 @@ body {
 
 .YouTube {
     background-color: var(--cinzaLayout);
-    font-size: 0.8em;
+    font-size: 0.77em;
+    flex-direction: column;
 }
 
 .Introducao {
@@ -274,6 +286,11 @@ body {
 
 #textoSobre h2, p {
     color:#000000;
+}
+
+#DivulgacaoYoutube {
+    margin-top: 0px;
+    margin-right: 0px;
 }
 
 
@@ -477,6 +494,11 @@ a {
     header {
     height: 96px;
     }
+
+    #DivulgacaoYoutube {
+        margin-top: -15px;
+        margin-right: 15px;
+    }
 }
 
 /* Tablet portrait             */
@@ -578,6 +600,11 @@ a {
         padding: 15px 15px 50px 15px;
     }
 
+    .Container3{
+        margin: 0 auto;
+        padding: 50px 15px 30px 450px;
+    }
+
     .Container4 {
         margin: 0 auto;
         padding: 50px 400px 50px 400px;
@@ -602,7 +629,6 @@ a {
     .Flex4 {
         flex-direction: row;
         justify-content:space-around;
-        align-items: left;
     }
 
     .FlexSection {
@@ -612,12 +638,13 @@ a {
 
     .YouTube {
         font-size: 1em;
+        
     }
 
     /* Citações */
     .bannerCubo {
         display: block;
-        background: url(img/banner.png);
+        background: url(img/banner3.png);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -690,6 +717,11 @@ a {
         font-size: 1.5em;
         margin-bottom: 10px;
         color: var(--brancoLayout);
+    }
+
+    #DivulgacaoYoutube {
+        margin-top: -15px;
+        margin-right: 450px;
     }
 
     .TopicosIntro {
