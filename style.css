@@ -47,7 +47,7 @@ main h1 {
 }
 
 main h2 {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 main h1,h2 {
@@ -101,7 +101,7 @@ html {
 
 
 .Card {
-    margin-top: 30px;
+    margin-top: 15px;
     width: 338px;
     height: 450px;
     background-color: var(--backgroundCard);
@@ -148,6 +148,26 @@ html {
 
 .Card2 p {
     padding: 10px 30px 50px 30px;
+    text-align: left;
+    color: var(--cinzaLayout)
+}
+
+.Card3 {
+    margin-top: 30px;
+    width: 600px;
+    height: 230px;
+    background-color: var(--backgroundCard);
+    border: 2px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.Card3 h3 {
+    margin: 0px 30px 0px 30px;
+}
+
+.Card3 p {
+    padding: 0px 30px 0px 30px;
     text-align: left;
     color: var(--cinzaLayout)
 }
@@ -199,6 +219,21 @@ body {
     padding: 140px 15px 50px 15px;
 }
 
+.ContainerIntroducao {
+    margin: 0 auto;
+    padding: 40px 15px 0px 15px;
+}
+
+.ContainerSobre {
+    margin: 0 auto;
+    padding: 50px 15px 50px 15px;
+}
+
+.ContainerCubos {
+    margin: 0 auto;
+    padding: 50px 15px 50px 8px;
+}
+
 .Flex {
     display: flex;
     flex-direction: column;
@@ -216,6 +251,7 @@ body {
     align-items: stretch;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 
 .Flex4 {
@@ -236,6 +272,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.FlexCubo {
+    display: flex;
+    flex-direction: column;
+}
+
+.FlexCubo2 {
+    display: flex;
+    flex-direction: column;
 }
 
 /*
@@ -271,12 +317,21 @@ body {
     display: none;
 }
 
-.bannerCubo img, h1{
+.bannerCubo img{
+    display: none;
+}
+
+.bannerCubo h1{
     display: none;
 }
 
 .bannerCubo p {
     display: none;
+}
+
+.CuboTipos {
+    width: 360px;
+    height: 230px;
 }
 
 #imgSobre img{
@@ -291,6 +346,14 @@ body {
 #DivulgacaoYoutube {
     margin-top: 0px;
     margin-right: 0px;
+}
+
+#TiposDeCubo {
+    list-style: none;
+}
+
+#TiposDeCubo img {
+    border-radius: 25px;
 }
 
 
@@ -406,6 +469,8 @@ a {
     text-decoration: none;
 }
 
+
+
 #topo {
     position: fixed;
     right: 10px;
@@ -440,6 +505,11 @@ a {
 
     }
 
+    .ContainerCubos {
+        margin: 0 auto;
+        padding: 50px 15px 50px 15px;
+    }
+
     .Flex {
         justify-content: space-between;
         align-items: center;
@@ -452,6 +522,16 @@ a {
         align-items: center;
         flex-direction: row;
         text-align: left;
+    }
+
+    .FlexCubo {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .FlexCubo2 {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .BannerPaginas {
@@ -513,6 +593,16 @@ a {
         flex-direction: row;
     }
 
+    .FlexCubo {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .FlexCubo2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .BannerPaginas {
         height: 12vh;
     }
@@ -567,6 +657,20 @@ a {
         flex-direction: row;
     }
 
+    .FlexCubo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .FlexCubo2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .BannerPaginas {
         height: 15vh;
     }
@@ -614,6 +718,11 @@ a {
         margin: 0 auto;
         padding: 140px 15px 50px 15px;
     }
+
+    .ContainerCubos {
+        padding: 70px 300px 70px 300px;
+    }
+
     .Flex {
         justify-content: space-between;
         align-items: center;
