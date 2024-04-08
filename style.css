@@ -331,7 +331,7 @@ body {
 
 .YouTube {
     background-color: var(--cinzaLayout);
-    font-size: 0.77em;
+    font-size: 0.70em;
     flex-direction: column;
 }
 
@@ -375,8 +375,8 @@ body {
 .border2 img{
     border-radius: 25px;
     margin: 70px 0px 15px 0px;
-    width: 285px;
-    height: 285px;
+    width: 270px;
+    height: 270px;
 }
 
 .bannerCubo {
@@ -396,8 +396,8 @@ body {
 }
 
 .CuboTipos {
-    width: 360px;
-    height: 230px;
+    width: 350px;
+    height: 220px;
 }
 
 #imgSobre img{
