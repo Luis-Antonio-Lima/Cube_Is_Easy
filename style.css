@@ -224,6 +224,11 @@ body {
     padding: 25px 30px 50px 30px;
 }
 
+.Container7 {
+    margin: 0 auto;
+    padding: 5px 30px 50px 40px;
+}
+
 .ContainerIntroducao {
     margin: 0 auto;
     padding: 40px 15px 0px 15px;
@@ -272,6 +277,12 @@ body {
     text-align: center;
 }
 
+.Flex5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .FlexSobre {
     display: flex;
     flex-direction: column;
@@ -354,9 +365,23 @@ body {
     animation: slide 30s infinite;
 }
 
+.videoAjustavel {
+    width: 352;
+    height: 198;
+}
+
+.textoAjustavel h3{
+    text-align: center;
+}
+
 .imagemAjustavel {
     height: 200px;
     width: 290px;
+}
+
+.imagemAjustavel2 {
+    height: 360px;
+    width: 320px;
 }
 
 .border div, p{
@@ -632,6 +657,12 @@ a {
         justify-content: space-between;
         align-items: center;
         text-align: left;
+    }
+
+    .videoAjustavel {
+        width: 560px;
+        height: 315px;
+        border-radius: 30px
     }
 
     .BannerPaginas {
@@ -999,6 +1030,11 @@ a {
     .imagemAjustavel {
         height: 300px;
         width: 450px;
+    }
+
+    .imagemAjustavel2 {
+        height: 380px;
+        width: 340px;
     }
 
     #textoSobre h2{
