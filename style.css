@@ -204,7 +204,7 @@ body {
     padding: 0px 15px 50px 30px;
 }
 
-.Container3{
+.Container3 {
     margin: 0 auto;
     padding: 50px 15px 30px 15px;
 }
@@ -226,7 +226,7 @@ body {
 
 .Container7 {
     margin: 0 auto;
-    padding: 5px 30px 50px 40px;
+    padding: 5px 15px 50px 15px;
 }
 
 .ContainerIntroducao {
@@ -237,6 +237,11 @@ body {
 .ContainerSobre {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
+}
+
+.ContainerYoutube {
+    margin: 0 auto;
+    padding: 50px 15px 30px 15px;
 }
 
 .ContainerCubos {
@@ -291,7 +296,7 @@ body {
     text-align: center;
 }
 
-.Flex5 {
+.Flex6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,7 +313,7 @@ body {
 .FlexYoutube {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -432,11 +437,6 @@ body {
 
 #textoSobre h2, p {
     color:#000000;
-}
-
-#DivulgacaoYoutube {
-    margin-top: 0px;
-    margin-right: 0px;
 }
 
 #TiposDeCubo {
@@ -638,7 +638,7 @@ a {
     .FlexYoutube {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: normal;
         flex-direction: row;
     }
@@ -670,7 +670,7 @@ a {
     }
 
     .YouTube {
-        font-size: 1em;
+        font-size: 0.97em;
     }
 
     .Youtube div, a {
@@ -715,8 +715,7 @@ a {
     }
 
     #DivulgacaoYoutube {
-        margin-top: -15px;
-        margin-right: 15px;
+        margin: -15px 15px 0px 15px;
     }
 
     .espacamentoTutorial p{
@@ -865,12 +864,12 @@ a {
 
     .Container3{
         margin: 0 auto;
-        padding: 50px 15px 30px 450px;
+        padding: 50px 15px 30px 15px;
     }
 
     .Container4 {
         margin: 0 auto;
-        padding: 50px 400px 50px 400px;
+        padding: 50px 220px 50px 220px;
     }
 
     .Container5 {
@@ -880,6 +879,11 @@ a {
 
     .ContainerCubos {
         padding: 70px 300px 70px 300px;
+    }
+
+    .ContainerYoutube {
+        margin: 0 auto;
+        padding: 50px 15px 30px 15px;
     }
 
     .Flex {
@@ -1014,11 +1018,6 @@ a {
         color: var(--brancoLayout);
     }
 
-    #DivulgacaoYoutube {
-        margin-top: -15px;
-        margin-right: 450px;
-    }
-
     .TopicosIntro {
         margin-top: 10px;
     }
@@ -1040,6 +1039,10 @@ a {
     #textoSobre h2{
         margin-left: 24px;
     }
+
+    #DivulgacaoYoutube {
+        margin: -15px 30px 0px 50px;
+    }
     
 }
 
@@ -1047,5 +1050,10 @@ a {
 @media (min-width: 1400px) {
     .Container {
         max-width: 1360px;
+    }
+
+    .Container4 {
+        margin: 0 auto;
+        padding: 50px 350px 50px 350px;
     }
 }
