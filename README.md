@@ -1,6 +1,13 @@
 ![GitHub License](https://img.shields.io/github/license/Luis-Antonio-Lima/Cube_Is_Easy)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fluis-antonio-lima.github.io%2FCube_Is_Easy%2F)
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fluis-antonio-lima.github.io%2FCube_Is_Easy%2F)
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS válido!" />
+    </a>
+</p>
 
 # Acesse meu site pelo QR Code
 ![image](https://github.com/Luis-Antonio-Lima/Cube_Is_Easy/assets/132936281/330a33d2-c5af-4183-9d88-b6457590d933)
