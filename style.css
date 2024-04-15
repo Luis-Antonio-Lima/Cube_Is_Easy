@@ -439,11 +439,11 @@ body {
     color:#000000;
 }
 
-#TiposDeCubo {
+.TiposDeCubo ul {
     list-style: none;
 }
 
-#TiposDeCubo img {
+.TiposDeCubo img {
     border-radius: 25px;
     margin: 20px 0px 20px 0px;
 }
